@@ -1,0 +1,77 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Regular.eot');
+    src: url('../fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Regular.woff2') format('woff2'),
+        url('../fonts/Vazir-Regular.woff') format('woff'),
+        url('../fonts/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Vazir !important;
+}
+
+#HomePageHeader {
+    background: url('../img/headerBG.jpg');
+    background-size: 100% 100%;
+}
+
+@keyframes navBaranimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navBaranimation {
+    position: fixed;
+    background: white;
+    z-index: 50;
+    margin-top: -95px;
+    animation: navBaranimation 700ms;
+}
+.fifi{
+    background: linear-gradient(rgb(255, 255, 255),white,white,rgb(254, 240, 255),rgb(246, 212, 255));
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    border-radius: 30px;
+}
+.fifi p {
+    margin: 30px 0;
+    text-align: center;
+}
+.fifi  form{
+    display: flex;
+    padding-top: 35px;
+    flex-direction: column;
+    min-height: 100px;
+}
+.fifi  form>input{
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgb(240, 240, 240);
+}
+.fifi  form>button{
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    color: white;
+    background: purple;
+}
+.fifi  form>button:hover{
+    background: rgb(82, 0, 82);
+}
