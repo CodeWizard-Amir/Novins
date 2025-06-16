@@ -18,7 +18,7 @@ export const novinRoutes = createBrowserRouter([
         element : <Collaboration />
     },
     {
-        path :'/Article/:id',
+        path :'/Article/:id/:title',
         element : <EachArticle />
     },
     {

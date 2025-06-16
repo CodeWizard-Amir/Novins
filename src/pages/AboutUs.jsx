@@ -1,4 +1,3 @@
-import React from "react";
 import MobileNavbar from "../components/MobileNavbar";
 import KeyUp from "../components/KeyUp";
 import HomePageHeader from "../components/HomePageHeader";
